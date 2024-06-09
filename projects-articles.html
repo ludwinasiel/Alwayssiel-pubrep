@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alwayssiel</title>
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="background-color: rgb(153, 92, 66);">
+    <header class="header">
+        <h1 style="color: #F7DC6F"> Alwayssiel</h1> 
+            <div class="grid-container">
+            </div>
+            <!--MENU-->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects-articles.html">Articles</a></li>
+                        <li><a href="project-bookreviews.html">Book Reviews</a></li>
+                        <li><a href="project-aboutme.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--ALL ARTICLES PAGE-->
+        <header>
+        <section id="display-area">
+            <!---SEARCH BUTTON--->
+            <div class="header-right">
+                <form class="search" onsubmit="return false;">
+                    <input type="text" placeholder="Search" name="search" id="searchInput">
+                    <button type="submit" onclick="searchArticles()"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <!--TITLE PAGE ALL ARTICLES-->
+            <div>
+                <h2 class="list-article"> All Articles </h2>
+            </div>
+        </header>    
+
+                <!--LIST ALL ARTICLES-->
+                <div class="all-articles" id="list-allarticles">
+                    <a class="A-article" href="contohartikel1.html">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A1.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">10 Simple Habits to Improve Your Wellbeing Today</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="contohartikel2.html">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A2.jpeg" alt="Article Image">
+                         </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">Mindfulness Practices to Improve Your Daily Wellbeing</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="contohartikel3.html">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A3.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">How to Create a Wellbeing Plan That Works for You</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A4.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">Top 5 Meditation Techniques for Enhanced Wellbeing</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A5.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">Nutrition and Wellbeing: Foods That Boost Your Mood</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A6.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">The Benefits of Physical Exercise for Overall Wellbeing</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A7.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">Stress Management Techniques for a Healthier Wellbeing</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A8.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">The Role of Sleep in Maintaining Your Wellbeing</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A9.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">The Ultimate Guide to Mental Wellbeing: Tips and Strategies</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                    <a class="A-article" href="#">
+                        <div class="A-articleimg">
+                            <img class="artikel-foto" src="assets/A10.jpeg" alt="Article Image">
+                        </div>
+                        <div class="A-articletext">
+                            <h2 class="A-articletitle">How to Achieve Work-Life Balance for Better Wellbeing</h2>
+                            <p class="Article-date">May 28, 2024</p>
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+
+        <!-- Add next button -->
+    <section>
+        <div class="next-button">
+            <button class="button">
+                <a href="articlespage2.html" class="next-buttontext"><b> Next </b></a>
+            </button>
+        </div>
+    </section>
+
+        <!---FOOTER--->
+    <footer>
+        <p><b> Alwayssiel &copy; 2024 </b></p>
+        <p> Terms of Service </p>
+    </footer>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

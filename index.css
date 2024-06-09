@@ -1,0 +1,658 @@
+body {
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+        
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: #613c1f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/*--Style for Alwayssiel--*/
+#alwayssiel-logo {
+    display: inline-block;
+    text-justify: left;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/*--MENU--*/
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-justify: right;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    justify-content: right;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration:none;
+    color: #F4D03F;
+}
+
+.nav a:hover {
+    color: #666;
+}
+
+
+  /*--WELCOMING TEXT--*/
+  .main-title {
+    color: #F7DC6F;
+    text-align: center;
+    justify-content: center;
+    padding-top: 120px;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.secondary-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 15px;
+    font-family: monospace;
+}
+
+/*--WELCOMING POST--*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    margin: 0px;
+}
+
+.main p {
+    color: #ffffff;
+    font-size: 50px
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+
+/*-- NEW ARTICLES AND BOOK REVIEWS SECTIONS--*/
+.h2 {
+    grid-area: h2;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color:#ffffff;
+    font-family: monospace;
+    background-color: #613c1f;
+    width: 100%;
+    height: 40px;
+    padding-top: 6px;
+}
+
+.h2-2 {
+    grid-area: h2;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 25px;
+    color:#ffffff;
+    font-family: monospace;
+    background-color: #613c1f;
+    width: 100%;
+    height: 40px;
+    padding-top: 6px;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #e2ba7e;
+    box-sizing: border-box;
+    border-radius:15px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.4);
+    color: #4c3c00;
+}
+     
+
+.card img {
+    display: block;
+    margin: 0 auto 10px auto; /* Center the image and add space below it */
+    max-width: 50%; /* Ensure the image fits within the card */
+    border-radius: 10px;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #613c1f;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/*--ALL ARTICLES PAGE TITLE--*/
+.list-article{
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color:#ffffff;
+    font-family: monospace;
+}
+
+/*--SEARCH--*/
+.search{
+    display: flex;
+    width: 300px;
+    float: right;
+    padding-right: 25px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+
+form.search input[type=text] {
+    padding: 7px;
+    font-size: 13px;
+    border: 1px solid #e6e8ed;
+    float: left;
+    width: 80%;
+    background: #e6e8ed;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+}
+
+form.search input[type=text]:focus{
+    border: 1px solid #e6e8ed;
+}
+
+form.search button {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background: #d1bb8d;
+    color: #005FB1;
+    font-size: 17px;
+    border: 0px;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*--LIST ALL ARTICLES--*/
+.A-article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+.A-articleimg {
+    width: 250px;
+    height: 120px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-right: 20px;
+}
+
+.artikel-foto {
+    border-radius: 20px;
+}
+  
+.A-articletext {
+    width: 70%;
+    padding-top: 46px;
+    text-decoration: none;
+    color: #ffffff;
+}
+  
+.A-articletitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: monospace;
+}
+  
+.Article-date {
+    font-size: 14px;
+    color: #eddcdc;
+    font-family: monospace;
+}
+
+
+/*--BACK BUTTON--*/
+.back-button {
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.button {
+    width: 90px;
+    height: 30px;
+    border-radius: 90px;
+    border-style: none;
+    background-color: #F7DC6F;
+    box-shadow: #4c3c00;
+}
+
+.back-buttontext {
+    color: #613c1f;
+    text-decoration: none;
+}
+
+/*--NEXT BUTTON--*/
+.next-button {
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.button {
+    width: 90px;
+    height: 30px;
+    border-radius: 90px;
+    border-style: none;
+    background-color: #F7DC6F;
+    box-shadow: #4c3c00;
+}
+
+.next-buttontext {
+    color: #613c1f;
+    text-decoration: none;
+}
+
+
+/*--BOOK REVIEWS PAGE--*/
+.h2-bookrv {
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color:#ffffff;
+    font-family: monospace;
+}
+
+.bookrv-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.bookrv-pagecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #e2ba7e;
+    box-sizing: border-box;
+    border-radius:15px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.4);
+    color: #4c3c00;
+    width: 400px;
+    height: 200px;
+}
+     
+
+.card img {
+    display: block;
+    margin: 0 auto 10px auto; /* Center the image and add space below it */
+    max-width: 50%; /* Ensure the image fits within the card */
+    border-radius: 10px;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #613c1f;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
+.IMG-RV {
+    display: block;
+    margin-top: 50px;
+    margin-right: 45%;
+    margin-left: 31%;
+    margin-bottom: 10px;
+    width: 450px;
+    height: 450px;
+    border-radius: 9px;
+}
+
+.H2-Rv {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.H3-Rv {
+    margin-left: 85px;
+    margin-right: 65px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.maincontent-Aslist {
+    margin-left: 85px;
+    margin-right: 65px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+/*--ARTICLE--*/
+.TITLE-As {
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.DATE-As {
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: monospace;
+    color: #eddcdc;
+}
+
+
+.IMG-As {
+    display: block;
+    margin-top: 30px;
+    margin-right: 45%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    width: 730px;
+    height: 350px;
+    border-radius: 9px;
+}
+
+.content-As {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.H2-As {
+    margin-left: 85px;
+    margin-right: 65px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.maincontent-As {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.H2-AsCon {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 18px;
+    margin-top: 60px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.lastsentence-As {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 120px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.lastsentence-As a {
+    font-family: monospace;
+    font-size: 16px;
+    color: #ffe476;
+    text-decoration: none;
+}
+
+/*--ABOUT ME PAGE--*/
+.About-metitle {
+    text-align: left;
+    padding-left: 65px;
+    padding-top: 100px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    color: #ffffff;
+    font-size: 45px;
+}
+
+.About-meProfile {
+    padding-left: 65px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.About-meCard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 35px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.AM-Card {
+    display: flex;
+    align-items: center;
+    background-color: #dcbc8b;
+    box-sizing: border-box;
+    border-radius: 100%;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.4);
+    color: #4c3c00;
+    width: 300px;
+    height: 380px;
+}
+
+.AM-IMG {
+    width: 310px;
+    height: 330px;
+    margin right: 20px;
+    margin-left: 32px;
+    margin-top: 58px;
+    margin-bottom: 60px;
+    border-radius: 100%;
+}
+
+.text-profile {
+    display: flex
+    text-align: left;
+    padding-top: 0px;
+    padding-right: 600px;
+    margin-bottom: 10px;
+    justify-content: left;
+}
+
+
+.text-AM {
+    display: flex;
+    align-text: left;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    color: #ffffff;
+    font-size: 18px;
+    width: 800px;
+}
+
+//* Medium <= 992px */
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .list
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .nav a {
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+/* Small <= 768px */
+@media screen and (max-width: 768px) {
+    .main-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+    
+    .IMG-ContentAs {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .charts-and-table {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+    .AM-card, .bookrv-cards {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/*--FOOTER--*/
+footer {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    justify-content: center;
+    height: max-content;
+    background-color: #dcbc8b;
+    color: #433927;
+    padding: 10px;
+    font-family: monospace;
+    table-layout: fixed;
+}
